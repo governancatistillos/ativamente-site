@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    /* AtivaMente Alphaville Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 224 64% 15%;
+    
+    /* Primary: Azul #1e3a8a */
+    --primary: 224 64% 33%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Vermelho #dc2626 */
+    --secondary: 0 72% 51%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent: Amarelo/Laranja #f59e0b */
+    --accent: 38 92% 50%;
+    --accent-foreground: 224 64% 15%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 224 64% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 64% 15%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 224 64% 33%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --radius: 1rem;
+
+    /* Header Specific Tokens */
+    --header-bg: 224 64% 33%;
+    --header-foreground: 0 0% 100%;
+    --header-active: 38 92% 50%;
+    --header-hover: 0 0% 100%;
+  }
+  
+  .dark {
+    --background: 224 64% 10%;
+    --foreground: 210 40% 98%;
+    
+    --primary: 224 64% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 72% 60%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 38 92% 55%;
+    --accent-foreground: 224 64% 10%;
+    
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    
+    --card: 224 64% 12%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 224 64% 12%;
+    --popover-foreground: 210 40% 98%;
+    
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224 64% 45%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Header Specific Tokens */
+    --header-bg: 224 64% 10%;
+    --header-foreground: 210 40% 98%;
+    --header-active: 38 92% 55%;
+    --header-hover: 210 40% 98%;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)/0.05) 0%, hsl(var(--accent)/0.08) 50%, hsl(var(--secondary)/0.05) 100%);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
