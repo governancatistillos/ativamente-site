@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react';
+import { MapPin, MessageCircle, Mail, Instagram } from 'lucide-react';
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -38,8 +38,8 @@ const Footer = () => {
                 <span className="text-sm text-primary-foreground/80">Alameda Rio Negro, 500 - Alphaville Industrial, Barueri - SP, Brasil Unidade I - Salas 104, 105, 107 e 108 Unidade II - Salas 109, 112, 115 e 116</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                <span className="text-sm text-primary-foreground/80">(11) 99126-3146</span>
+                <MessageCircle className="h-5 w-5 flex-shrink-0 text-[#25D366]" />
+                <a href="https://wa.me/5511991263146" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-primary-foreground hover:text-[#25D366] transition-colors">Fale conosco: (11) 99126-3146</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
@@ -55,13 +55,12 @@ const Footer = () => {
               Segunda a Sexta: 8h às 18h<br />
               Sábado: 8h às 12h
             </p>
+            <h3 className="text-lg font-bold mb-4 text-accent">Redes sociais</h3>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/ativamentealphaville/" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-accent hover:text-primary transition-all duration-200">
+              <a href="https://www.instagram.com/ativamentealphaville/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da AtivaMente" className="inline-flex h-11 items-center gap-2 rounded-full bg-white/10 px-4 text-sm font-bold hover:bg-accent hover:text-primary transition-all duration-200">
                 <Instagram className="h-5 w-5" />
+                Instagram
               </a>
-            {/* <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-accent hover:text-primary transition-all duration-200">
-                <Facebook className="h-5 w-5" />
-              </a> */}
             </div>
           </div>
         </div>

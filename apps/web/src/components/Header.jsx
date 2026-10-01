@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, MessageCircle } from 'lucide-react';
+import { Instagram, Menu, MessageCircle } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 
@@ -25,6 +25,7 @@ const Header = () => {
   const whatsappLink = "https://wa.me/5511991263146?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta.";
 
   return (
+    <>
     <header className="sticky top-0 z-50 w-full bg-[hsl(var(--header-bg))] text-[hsl(var(--header-foreground))] shadow-md transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
@@ -64,10 +65,13 @@ const Header = () => {
             </div>
             
             {/* CTA Button */}
+            <a href="https://www.instagram.com/ativamentealphaville/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da AtivaMente" title="Instagram da AtivaMente" className="ml-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-[hsl(var(--header-foreground))] transition-colors hover:bg-white/10 hover:text-[hsl(var(--header-hover))]">
+              <Instagram className="h-5 w-5" />
+            </a>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="ml-2">
               <Button className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-bold shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200">
                 <MessageCircle className="mr-2 h-4 w-4" />
-                Agende Sua Consulta
+                Fale conosco
               </Button>
             </a>
           </nav>
@@ -101,8 +105,12 @@ const Header = () => {
                   <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full font-bold h-12 shadow-md active:scale-[0.98] transition-transform">
                       <MessageCircle className="mr-2 h-5 w-5" />
-                      Agende Sua Consulta
+                      Fale conosco
                     </Button>
+                  </a>
+                  <a href="https://www.instagram.com/ativamentealphaville/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="mt-3 flex h-12 items-center justify-center gap-2 rounded-full border border-white/20 text-sm font-bold text-[hsl(var(--header-foreground))] transition-colors hover:bg-white/10">
+                    <Instagram className="h-5 w-5" />
+                    Siga no Instagram
                   </a>
                 </div>
               </nav>
@@ -111,6 +119,11 @@ const Header = () => {
         </div>
       </div>
     </header>
+    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="Fale com a AtivaMente pelo WhatsApp" className="fixed bottom-5 right-4 z-[60] inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 font-bold text-white shadow-xl transition-transform hover:scale-105 hover:bg-[#20BD5A] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#128C7E] sm:bottom-6 sm:right-6">
+      <MessageCircle className="h-5 w-5" />
+      <span>Fale conosco</span>
+    </a>
+    </>
   );
 };
 

@@ -183,7 +183,7 @@ const HomePage = () => {
         </section>
 
         {/* Navigation Cards Section */}
-        <section className="py-24 bg-background relative -mt-10 z-30 rounded-t-[3rem]">
+        <section className="py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Como podemos ajudar?</h2>
