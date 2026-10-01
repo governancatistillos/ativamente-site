@@ -39,56 +39,56 @@ const galleryData = [
   {
     id: 8,
     url: 'https://i.imgur.com/PoeNHE1.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 9,
     url: 'https://i.imgur.com/50M6nhP.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 10,
     url: 'https://i.imgur.com/Om5ActK.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 11,
     url: 'https://i.imgur.com/lL18IZ1.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 12,
     url: 'https://i.imgur.com/COcWsVn.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 13,
     url: 'https://i.imgur.com/8Lqmn8G.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 14,
     url: 'https://i.imgur.com/0l0nM4F.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
   {
     id: 15,
     url: 'https://i.imgur.com/D9HBKfn.jpeg',
-    title: 'Terapia',
+    title: 'Terapia ABA',
     description: '',
     category: 'Terapias'
   },
