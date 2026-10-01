@@ -99,7 +99,7 @@ O Vite inicia o site em `http://localhost:3000`.
 npm run build
 ```
 
-Os arquivos de produção são gerados em `dist/apps/web`.
+Os arquivos de produção são gerados em `apps/web/dist`.
 
 ### Visualizar o build
 
